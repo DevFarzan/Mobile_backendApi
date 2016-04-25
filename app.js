@@ -19,8 +19,8 @@ db.once('open', function (callback) {
 
 //Connecting Schemas
 var models = glob.sync(config.root + '/app/models/*.js');
-models.forEach(function (model) {
-    require(model);
+models.forEach(function (models) {
+    require(models);
 });
 
 require('./config/express')(app, config);

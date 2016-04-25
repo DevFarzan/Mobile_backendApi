@@ -32,18 +32,24 @@ module.exports = function(app, config) {
     app.use(compress());
     app.use(methodOverride());
 
-    var controllers1 = glob.sync(config.root + '/app/controller/home.js');
+    /*var controllers1 = glob.sync(config.root + '/app/controller/home.js');
 
     controllers1.forEach(function (controller) {
         require(controller)(app);
-    });
+    });*/
 
-   /* var controllers3 = glob.sync(config.root + '/app/controllers/addAppointmentAPI.js');
+    var homeControllers = glob.sync(config.root +'/app/controller/home.js');
+
+   homeControllers.forEach(function(controller){
+      require(controller)(app);
+   })
+    
+    var controllers3 = glob.sync(config.root + '/app/controller/getAllUsersDishes.js');
 
     controllers3.forEach(function (controller) {
         require(controller)(app);
     });
-    var controllers4 = glob.sync(config.root + '/app/controllers/addClinicAPI.js');
+/*    var controllers4 = glob.sync(config.root + '/app/controllers/addClinicAPI.js');
 
     controllers4.forEach(function (controller) {
         require(controller)(app);
