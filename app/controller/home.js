@@ -6,6 +6,6 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
-    res.send('Welcome to HomeChef Mobile App Server');
+    res.send('Welcome to Mobile App Server');
 
 });
