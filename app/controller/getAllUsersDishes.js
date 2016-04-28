@@ -23,22 +23,7 @@
              }
              else if(AllUserDishes){
                  var allDishes = [];
-                 /* if( data != undefined && data.length > 0) {
-                  for (var a = 0; a < data.length; a++) {
-                  var chefDishes = [];
-
-                  for (var i = 0; i < data[a].dishes.length; i++) {
-                  var fd = "", td = "";
-
-                  if (data[a].dishes[i].isactive == false) {
-                  chefDishes.push(data[a].dishes);
-                  var DishesData = chefDishes
-
-                  }
-                  }
-                  }
-                  }*/
-                 //res.send(data);
+                
                  async.each(AllUserDishes,
                      function(record, TopCallback){
 
@@ -91,8 +76,7 @@
                          });
 
                      },function(err ){ // All tasks are done now
-                         //console.log(allDishes.length);
-                        // res.send(allDishes);
+                         
                          res.send({
                              code:200,
                              content:allDishes,

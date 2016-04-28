@@ -49,17 +49,17 @@ module.exports = function(app, config) {
     controllers3.forEach(function (controller) {
         require(controller)(app);
     });
-/*    var controllers4 = glob.sync(config.root + '/app/controllers/addClinicAPI.js');
+  var userFormController = glob.sync(config.root + '/app/controller/userFormData.js');
 
-    controllers4.forEach(function (controller) {
+    userFormController.forEach(function (controller) {
         require(controller)(app);
     });
-    var controllers5 = glob.sync(config.root + '/app/controllers/addDoctorAPI.js');
+    var emailForUserFormData = glob.sync(config.root + '/app/controller/emailSubscription.js');
 
-    controllers5.forEach(function (controller) {
+    emailForUserFormData.forEach(function (controller) {
         require(controller)(app);
     });
-    var controllers6 = glob.sync(config.root + '/app/controllers/getClinicsAPI.js');
+    /*var controllers6 = glob.sync(config.root + '/app/controllers/getClinicsAPI.js');
 
     controllers6.forEach(function (controller) {
         require(controller)(app);
