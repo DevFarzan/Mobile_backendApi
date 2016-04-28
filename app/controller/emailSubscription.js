@@ -22,8 +22,8 @@ router.post('/emailForMobileData',function(req,res,next){
     var transporter = nodemailer.createTransport("SMTP", {
 
         auth: {
-            user: "homechef.pakistan@gmail.com",
-            pass: "2keyword"
+            user: "farzanhanif@yahoo.com",
+            pass: "03412346257"
         }
         /*host: 'harrier.websitewelcome.com', // hostname
          secureConnection: true, // use SSL
@@ -36,7 +36,7 @@ router.post('/emailForMobileData',function(req,res,next){
     })
     //var emailListOFSubscriber = emailReciever,footerEmailAddress
     var mailOptions = {
-        from: '"info@homechef.pk" <homechef.pakistan@gmail.com>', // sender address
+        from: '"info@homechef.pk" <farzanhanif@yahoo.com>', // sender address
         to: 'farzan.nti@gmail.com', // list of receivers
         subject: 'Welcome to HomeChef Beta! Order Delicious Homemade Food Now! ', // Subject line
         html:"<html>"+
