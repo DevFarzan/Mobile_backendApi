@@ -64,12 +64,14 @@ module.exports = function(app, config) {
     userLogin.forEach(function (controller) {
         require(controller)(app);
     });
-    /*var controllers7 = glob.sync(config.root + '/app/controllers/getDoctorsAPI.js');
+   
+    /*var userSignup = glob.sync(config.root + '/app/controller/usersignup.js');
 
-    controllers7.forEach(function (controller) {
+    userSignup.forEach(function (controller) {
         require(controller)(app);
-    });
-    var controllers8 = glob.sync(config.root + '/app/controllers/getDoctorDetailAPI.js');
+
+    });*/
+    /*var controllers8 = glob.sync(config.root + '/app/controllers/getDoctorDetailAPI.js');
 
     controllers8.forEach(function (controller) {
         require(controller)(app);

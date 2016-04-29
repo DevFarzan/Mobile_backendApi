@@ -53,3 +53,39 @@ router.post('/userlogin',function(req,res,next){
         }*/
 
 })
+router.post('/usersignup',function(req,res,next) {
+    var curDate = new Date();
+    var days = ['SUN', 'MON', 'TUE', 'WED', 'THR', 'FRI', 'SAT'];
+    var tempDate = curDate.getDate() + "-" + (curDate.getMonth() + 1 < 10 ? "0" + (curDate.getMonth() + 1) : (curDate.getMonth() + 1) ) + "-" + curDate.getFullYear();
+    if (!req.body.signup.Name || !req.body.signup.emailAddress || !req.body.signup.phone || !req.body.signup.password) {
+        return res.status(400).json({message: 'Please enter correct details.'});
+    }
+    User.findOne({'mobile': "0"+req.body.signup.phone}, function (err, user) {
+
+        if (err) {
+            console.log(err.name);
+            return res.status(400).json({message: 'Something went wrong, please try again.'});
+        }
+        if (user) {
+            console.log('User is already registered.');
+            return res.status(400).json({message: 'User is already registered.'});
+        }
+
+        var user = new User({
+            username: req.body.signup.Name,
+            email: req.body.signup.emailAddress,
+            pass: req.body.signup.password,
+            mobile: "0" + req.body.signup.phone,
+            subscribe: false,
+            InsertedDate: tempDate,
+            MobileData: true
+        })
+
+        user.save(function (err, data) {
+            res.send({
+                err: err,
+                data: data
+            })
+        });
+    });
+})

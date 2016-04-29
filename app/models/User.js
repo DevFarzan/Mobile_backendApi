@@ -10,7 +10,8 @@ var UserSchema = new mongoose.Schema({
   subscribe: {type: Boolean ,  default: false },
   status:   {type: Boolean ,  default: false },
   hash: String,
-  salt: String
+  salt: String,
+  MobileData:String
 });
  
 
@@ -40,8 +41,8 @@ UserSchema.methods.generateJWT = function() {
   return jwt.sign({
     _id: this._id,
     username: this.username,
-    exp: parseInt(exp.getTime() / 1000),
-  }, config.secretkey );
+    exp: parseInt(exp.getTime() / 1000)
+  });
 };
 
 mongoose.model('User', UserSchema);
