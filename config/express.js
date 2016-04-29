@@ -59,12 +59,12 @@ module.exports = function(app, config) {
     emailForUserFormData.forEach(function (controller) {
         require(controller)(app);
     });
-    /*var controllers6 = glob.sync(config.root + '/app/controllers/getClinicsAPI.js');
+    var userLogin = glob.sync(config.root + '/app/controller/userLogin.js');
 
-    controllers6.forEach(function (controller) {
+    userLogin.forEach(function (controller) {
         require(controller)(app);
     });
-    var controllers7 = glob.sync(config.root + '/app/controllers/getDoctorsAPI.js');
+    /*var controllers7 = glob.sync(config.root + '/app/controllers/getDoctorsAPI.js');
 
     controllers7.forEach(function (controller) {
         require(controller)(app);
