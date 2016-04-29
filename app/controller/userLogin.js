@@ -24,9 +24,10 @@ router.post('/userlogin',function(req,res,next){
 
         if (user) {
             console.log("IF user :", user);
-
+        var phonenumber = "0"+user.login.mobileNumber
+            console.log(phonenumber);
             User.find({
-                mobile: user.login.mobileNumber,
+                mobile: phonenumber,
         }, function (err, data) {
                 if (err) {
                     console.log(err);
