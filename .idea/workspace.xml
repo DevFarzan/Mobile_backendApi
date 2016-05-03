@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84be58c5-3a0e-4302-a19b-d14785418de5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/userLogin.js" afterPath="$PROJECT_DIR$/app/controller/userLogin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/express.js" afterPath="$PROJECT_DIR$/config/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/emailSubscription.js" afterPath="$PROJECT_DIR$/app/controller/emailSubscription.js" />
     </list>
     <ignored path="Mobile_backendApi.git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,13 +65,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userLogin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userLogin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/userLogin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
               <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="e#505#1628#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailSubscription.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controller/emailSubscription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+              <folding>
+                <marker date="1462276070916" expanded="true" signature="1655:1684" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="1855:1893" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="1894:5105" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="1923:1953" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2006:2098" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2126:2195" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2295:2371" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2400:2424" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2534:2574" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2674:2690" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2721:2797" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2860:2900" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="2969:2985" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3016:3092" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3162:3202" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3275:3291" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3322:3398" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3459:3499" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3572:3588" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3589:3839" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3589:3840" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3619:3695" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3756:3796" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3891:3907" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="3938:4014" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4085:4125" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4196:4212" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4213:4452" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4213:4453" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4244:4320" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4392:4431" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4502:4518" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4519:4757" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4519:4758" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4548:4624" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4693:4733" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4809:4825" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4826:5064" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4856:4932" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="4998:5038" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5134:5146" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5259:5290" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5259:5599" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5342:5377" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5477:5511" placeholder="..." />
+                <marker date="1462276070916" expanded="true" signature="5477:5599" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -107,7 +171,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/mobileFormData.js" />
         <option value="$PROJECT_DIR$/app/controller/userFormData.js" />
-        <option value="$PROJECT_DIR$/app/controller/emailSubscription.js" />
         <option value="$PROJECT_DIR$/app/controller/getAllUsersDishes.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/controller/usersignup.js" />
@@ -116,6 +179,7 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config/passport.js" />
         <option value="$PROJECT_DIR$/app/controller/userLogin.js" />
+        <option value="$PROJECT_DIR$/app/controller/emailSubscription.js" />
       </list>
     </option>
   </component>
@@ -339,12 +403,12 @@
       <workItem from="1461752391239" duration="6669000" />
       <workItem from="1461817576289" duration="13784000" />
       <workItem from="1461904372167" duration="15251000" />
-      <workItem from="1462252447561" duration="7986000" />
+      <workItem from="1462252447561" duration="9518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50811000" />
+    <option name="totallyTimeSpent" value="52343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -356,7 +420,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -454,6 +518,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -461,6 +526,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,20 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/emailSubscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/usersignup.js" />
     <entry file="file://$PROJECT_DIR$/app/controller/getAllUsersDishes.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,6 +734,22 @@
           <folding>
             <element signature="e#505#1628#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/emailSubscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
