@@ -1,12 +1,13 @@
 var express = require('express'),
     router = express.Router(),
     mongoose = require('mongoose'),
-    passport = require('passport');
+    //passport = require('passport'),
     Dish = mongoose.model('Dish'),
-     fs = require('fs');
-    passwordHash = require('password-hash');
-    jwt = require('express-jwt');
+     fs = require('fs'),
+    passwordHash = require('password-hash'),
+    jwt = require('express-jwt'),
     Profile = mongoose.model('Profile'),
+    passport = require('passport'),
     User = mongoose.model('User');
 
 module.exports = function(app){
@@ -15,7 +16,7 @@ module.exports = function(app){
 
 router.post('/userlogin',function(req,res,next){
 
-    if(!req.body.login.mobileNumber || !req.body.login.Password){
+   /* if(!req.body.login.mobileNumber || !req.body.login.Password){
         return res.status(400).json({message: 'The mobile number or password you entered is incorrect. Please try again (check caps lock).'});
     }
 
@@ -41,7 +42,7 @@ router.post('/userlogin',function(req,res,next){
         }
 
 
-       /* if(user) {
+       /!* if(user) {
             User.find({
                 mobile: user.login.mobileNumber,
             }, function (err, data) {
@@ -50,8 +51,40 @@ router.post('/userlogin',function(req,res,next){
                     data: data
                 })
             })
-        }*/
+        }*!/
+*/
+    if(!req.body.mobileNumber || !req.body.Password){
+        return res.status(400).json({message: 'The mobile number or password you entered is incorrect. Please try again (check caps lock).'});
+    }
 
+    var user = req.body;
+
+    passport.authenticate('local', function(err , user  , info){
+
+        if(err){
+         console.log(" err :" , err  );
+         return next(err);
+         }
+
+        if(user){
+            console.log("IF user :" , user  );
+
+            Profile.findOne( {'regisId': user._id }, function (err, profile) {
+                if (err) {
+                    console.log( err );
+                    return res.status(400).json(  {message: 'Profile details not found.' }  );
+                }
+
+                //var isChef = profile.usertype && profile.usertype == "chef" ? true : false;
+                return res.json({user:user});
+
+            });
+
+        } else {
+            console.log("Else user :" , user , info  );
+            return res.json(info);
+        }
+    })(req, res, next);
 })
 router.post('/usersignup',function(req,res,next) {
     var curDate = new Date();

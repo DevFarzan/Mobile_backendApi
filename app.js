@@ -8,6 +8,7 @@ var express     = require('express'),
     io          = require('socket.io').listen(server);
 
 //Connecting database
+
 var configDB = require('./config/database.js');
 mongoose.connect(configDB.EvenNodeDB);
 
@@ -22,8 +23,10 @@ var models = glob.sync(config.root + '/app/models/*.js');
 models.forEach(function (models) {
     require(models);
 });
+//require('./config/passport');
 
 require('./config/express')(app, config);
+require('./config/passport');
 
 //var deleteAppoint = require('./app/controllers/deletePreviousAppointments.js');
 

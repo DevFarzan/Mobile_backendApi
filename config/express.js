@@ -31,7 +31,7 @@ module.exports = function(app, config) {
     app.use(cookieParser());
     app.use(compress());
     app.use(methodOverride());
-
+   
     /*var controllers1 = glob.sync(config.root + '/app/controller/home.js');
 
     controllers1.forEach(function (controller) {
