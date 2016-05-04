@@ -19,9 +19,12 @@ router.post('/emailForMobileData',function(req,res,next){
          var days = ['SUN', 'MON', 'TUE', 'WED', 'THR', 'FRI', 'SAT'];
          var tempDate = curDate.getDate() + "-" + (curDate.getMonth() + 1 < 10 ? "0" + (curDate.getMonth() + 1) : (curDate.getMonth() + 1) ) + "-" + curDate.getFullYear();
          console.log(tempDate);
-       var  dishprice =        req.body.dishprice;
-       var  dishtime =         req.body.dishtime;
-       var  servepeople =      req.body.servepeople;
+
+       var  dishprice = req.body.dishprice;
+       var  dishtime =  req.body.dishtime;
+       var dishTime = new  Date(dishtime);
+        var tempDishTime = dishTime.getHours()+":"+dishTime.getMinutes();
+       var  servepeople = req.body.servepeople;
 
     var transporter = nodemailer.createTransport("SMTP", {
 
@@ -54,7 +57,7 @@ router.post('/emailForMobileData',function(req,res,next){
             "</div>"+
            "<div style='margin-top: 20px;margin-left:70px;text-decoration:underline;font-size: 16px;'>"+
           "<span style='font-family: sans-serif;'>A new request has been submitted by a foodie through HomeChef mobile app.</span>"+
-           "<span style='margin-left:132px;font-family: sans-serif'>The requested dish details are as below:</span>"+
+           "<span style='font-family: sans-serif'>The requested dish details are as below:</span>"+
            "</div>"+
             " <div  style='margin-top:92px;'>"+
             "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'>1.Type of dish requested:</span>"+
@@ -78,7 +81,7 @@ router.post('/emailForMobileData',function(req,res,next){
             "</div>"+
             "<div style='margin-top: 8px;'>"+
              "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>6.Time requested for Dish: </b></span>"+
-            "<span style='margin-left:9px;font-family: sans-serif'> "+dishtime+"</span>"+
+            "<span style='margin-left:9px;font-family: sans-serif'> "+tempDishTime+"</span>"+
            "</div>"+
             "<div style='margin-top: 8px;'>"+
            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>7.Price range for  dish: </b></span>"+
