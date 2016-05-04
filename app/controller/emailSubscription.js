@@ -60,24 +60,24 @@ router.post('/emailForMobileData',function(req,res,next){
            "<span style='font-family: sans-serif'>The requested dish details are as below:</span>"+
            "</div>"+
             " <div  style='margin-top:92px;'>"+
-            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'>1.Type of dish requested:</span>"+
-            "<span style='margin-left:20px;font-family: sans-serif'>Main dish</span>"+
+            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;color:black;'>1.Type of dish requested:</span>"+
+            "<span style='margin-left:20px;font-family: sans-serif;color: black;'>Main dish</span>"+
             "</div>"+
             "<div  style='margin-top: 8px;'>"+
-            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>2.Name of dish requested:</b></span>"+
-            "<span style='margin-left:12px;font-family: sans-serif'>"+dishname+"</span>"+
+            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;color: black;'><b>2.Name of dish requested:</b></span>"+
+            "<span style='margin-left:12px;font-family: sans-serif;color: black;'>"+dishname+"</span>"+
             " </div>"+
             "<div  style='margin-top: 8px;'>"+
-            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'<b>3.Serving people:</b></span>"+
-            "<span style='margin-left:72px;font-family: sans-serif'>"+servepeople+"</span>"+
+            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;color: black;'<b>3.Serving people:</b></span>"+
+            "<span style='margin-left:72px;font-family: sans-serif;color: black;'>"+servepeople+"</span>"+
            "</div>"+
             "<div style='margin-top: 8px;'>"+
-            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>4.Dish quantity:</b></span>"+
-            "<span style='margin-left:80px;font-family: sans-serif'>"+dishquantity+dishquantitynumber+"</span>"+
+            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;color: black;'><b>4.Dish quantity:</b></span>"+
+            "<span style='margin-left:80px;font-family: sans-serif;color: black;'>"+dishquantity+dishquantitynumber+"</span>"+
             "</div>"+
             "<div  style='margin-top: 8px;'>"+
-            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>5.Date requested for dish:</b></span>"+
-            "<span style='margin-left:14px;font-family: sans-serif'>"+tempDate+"</span>"+
+            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;color: black;'><b>5.Date requested for dish:</b></span>"+
+            "<span style='margin-left:14px;font-family: sans-serif;'>"+tempDate+"</span>"+
             "</div>"+
             "<div style='margin-top: 8px;'>"+
              "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>6.Time requested for Dish: </b></span>"+
@@ -85,17 +85,17 @@ router.post('/emailForMobileData',function(req,res,next){
            "</div>"+
             "<div style='margin-top: 8px;'>"+
            "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>7.Price range for  dish: </b></span>"+
-           "<span style='margin-left:36px;font-family: sans-serif'>"+dishprice+" RS</span>"+
+           "<span style='margin-left:36px;font-family: sans-serif;'>"+dishprice+" RS</span>"+
             "</div>"+
             "<div  style='margin-top: 8px;'>"+
             "<span style='margin-left: 16px;font-family: sans-serif;font-size: 15px;font-weight: bold;'><b>8.Addtional comments: </b></span>"+
-           "<span style='margin-left:31px;font-family: sans-serif'> "+dishcomments+"</span>"+
+           "<span style='margin-left:31px;font-family: sans-serif;'> "+dishcomments+"</span>"+
           "</div>"+
             "</div>"+
             "<div style='width: 262px'>"+
             "<img src='http://res.cloudinary.com/dxk0bmtei/image/upload/v1461826070/icon_znxfsa.png' style='width: 64px;margin-left: 201px;'>"+
             "</div>"+
-            "<div style='margin-left:266px;margin-top:-40px;'>"+
+            "<div style='margin-top:-26px;margin-left:266px;'>"+
             "<a href='http://beta.homechef.pk/' title='HomeChef website' target='blank' style='color: gray;text-decoration: none;'>beta.HomeChef.pk</a>"+
             "</div>"+
             "</div>"+
