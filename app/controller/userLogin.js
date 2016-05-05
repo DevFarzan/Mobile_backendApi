@@ -8,7 +8,8 @@ var express = require('express'),
     jwt = require('express-jwt'),
     Profile = mongoose.model('Profile'),
     passport = require('passport'),
-    User = mongoose.model('User');
+    User = mongoose.model('User'),
+    FbUserInfo = mongoose.model('FbUserINfo');
 
 module.exports = function(app){
     app.use('/', router);
@@ -121,4 +122,56 @@ router.post('/usersignup',function(req,res,next) {
             })
         });
     });
+})
+
+
+router.post('/checkUserPhoneNumber',function(req,res,next){
+    var userPhoneNumber = req.body.phone;
+    var FbName = req.body.name;
+    var Fbfirstname = req.body.firstname;
+    var Fbpicture = req.body.picture;
+    var email = req.body.email;
+
+
+    User.find({mobile:userPhoneNumber},function(err,user){
+        if(err){
+            return res.status(400).json(  {message: 'users not found.' }  );
+        }
+       else if(user == [0]){
+            res.json({message:'user not found in db'})
+        }
+        else{
+            res.json({user:user})
+        }
+
+    })
+});
+router.post('/FbUserInfo',function(req,res,next){
+
+    var curDate = new Date();
+    var days = ['SUN', 'MON', 'TUE', 'WED', 'THR', 'FRI', 'SAT'];
+    var tempDate = curDate.getDate() + "-" + (curDate.getMonth() + 1 < 10 ? "0" + (curDate.getMonth() + 1) : (curDate.getMonth() + 1) ) + "-" + curDate.getFullYear();
+
+    var userPhoneNumber = req.body.phone;
+    var FbName = req.body.name;
+    var Fbfirstname = req.body.firstname;
+    var Fbpicture = req.body.picture;
+    var email = req.body.email;
+
+    var FbUser_Info = new FbUserInfo({
+        name:FbName,
+        first_name:Fbfirstname,
+        mobile:userPhoneNumber,
+        picture:Fbpicture,
+        InsertedDate:tempDate,
+        email:email
+    });
+
+    FbUser_Info.save(function(err,data){
+        res.send({
+            err:err,
+            data:data
+        })
+    })
+    
 })

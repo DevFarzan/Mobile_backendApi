@@ -95,7 +95,7 @@ router.post('/emailForMobileData',function(req,res,next){
             "<div style='width: 262px'>"+
             "<img src='http://res.cloudinary.com/dxk0bmtei/image/upload/v1461826070/icon_znxfsa.png' style='width: 64px;margin-left: 201px;'>"+
             "</div>"+
-            "<div style='margin-top:-26px;margin-left:266px;'>"+
+            "<div style='margin-left:266px;'>"+
             "<a href='http://beta.homechef.pk/' title='HomeChef website' target='blank' style='color: gray;text-decoration: none;'>beta.HomeChef.pk</a>"+
             "</div>"+
             "</div>"+
