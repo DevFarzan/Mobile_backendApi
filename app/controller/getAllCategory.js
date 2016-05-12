@@ -1,8 +1,7 @@
  var express = require('express'),
      router = express.Router(),
-     mongoose = require('mongoose'),
-     Dish = mongoose.model('Dish'),
-     Profile = mongoose.model('Profile')
+     mongoose = require('mongoose')
+    var categorySkill = mongoose.model('categorySkill');
      
  var async = require("async");
 
@@ -10,7 +9,7 @@
      app.use('/', router);
  }
  
- router.get('/getAllUserDishes',function(req,res,next){
+ /*router.get('/getAllUserDishes',function(req,res,next){
   console.log('farzan');
      Dish.find({},{__v:0},
          function(err,AllUserDishes){
@@ -97,4 +96,14 @@
      )
 
 
- })
+ })*/
+router.post('/categorySkill',function(req,res){
+
+    var perticularCategory = req.body.category;
+
+    categorySkill.find({
+        category:perticularCategory
+    },function(err,data){
+        res.send({err:err,data:data});
+    })
+})

@@ -15,7 +15,7 @@ mongoose.connect(configDB.EvenNodeDB);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Database connection failed:'));
 db.once('open', function (callback) {
-    console.log("Database :: homechef :: connection established successfully.");
+    console.log("Database :: Interview :: connection established successfully.");
 });
 
 //Connecting Schemas

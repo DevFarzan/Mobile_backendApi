@@ -10,7 +10,7 @@ var path = require('path'),
         },
         port: process.env.PORT || 3000,
         secret : "homechef",
-        EvenNodeDB: 'mongodb://944745cb5bb672158048fa69ca95586e:944745cb5bb672158048fa69ca95586e@eu-1.evennode.com:27017/944745cb5bb672158048fa69ca95586e'
+        EvenNodeDB: 'mongodb://farzan:far@ds019882.mlab.com:19882/interviewquestion'
     },
 
     test: {
@@ -20,7 +20,7 @@ var path = require('path'),
         },
         port: process.env.PORT || 3000,
         secret : "homechef",
-        EvenNodeDB: 'mongodb://944745cb5bb672158048fa69ca95586e:944745cb5bb672158048fa69ca95586e@eu-1.evennode.com:27017/944745cb5bb672158048fa69ca95586e'
+        EvenNodeDB: 'mongodb://farzan:far@ds019882.mlab.com:19882/interviewquestion'
     },
 
     production: {
@@ -30,7 +30,7 @@ var path = require('path'),
         },
         port: process.env.PORT || 3000,
         secret : "homechef",
-        EvenNodeDB: 'mongodb://944745cb5bb672158048fa69ca95586e:944745cb5bb672158048fa69ca95586e@eu-1.evennode.com:27017/944745cb5bb672158048fa69ca95586e'
+        EvenNodeDB: 'mongodb://farzan:far@ds019882.mlab.com:19882/interviewquestion'
     }
 };
 

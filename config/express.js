@@ -44,26 +44,13 @@ module.exports = function(app, config) {
       require(controller)(app);
    })
     
-    var controllers3 = glob.sync(config.root + '/app/controller/getAllUsersDishes.js');
+    var controllers3 = glob.sync(config.root + '/app/controller/getAllCategory.js');
 
     controllers3.forEach(function (controller) {
         require(controller)(app);
     });
-  var userFormController = glob.sync(config.root + '/app/controller/userFormData.js');
-
-    userFormController.forEach(function (controller) {
-        require(controller)(app);
-    });
-    var emailForUserFormData = glob.sync(config.root + '/app/controller/emailSubscription.js');
-
-    emailForUserFormData.forEach(function (controller) {
-        require(controller)(app);
-    });
-    var userLogin = glob.sync(config.root + '/app/controller/userLogin.js');
-
-    userLogin.forEach(function (controller) {
-        require(controller)(app);
-    });
+  
+    
    
     /*var userSignup = glob.sync(config.root + '/app/controller/usersignup.js');
 
