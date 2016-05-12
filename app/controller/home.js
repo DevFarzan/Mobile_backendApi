@@ -6,6 +6,6 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
-    res.send('Welcome to InterviewQuestions Mobile App Server');
+    res.send('Welcome to InterviewQuestionsAnswer Mobile App Server');
 
 });
