@@ -2,6 +2,7 @@
      router = express.Router(),
      mongoose = require('mongoose')
     var categorySkill = mongoose.model('categorySkill');
+    var categoryQuestionAnswer = mongoose.model('categoryQuestionAnswer');
      
  var async = require("async");
 
@@ -106,4 +107,18 @@ router.post('/categorySkill',function(req,res){
     },function(err,data){
         res.send({err:err,data:data});
     })
+})
+
+router.post('/skillQuestion',function(req,res){
+    var skill = req.body.skill;
+
+    categoryQuestionAnswer.find({
+        skill:skill
+    },function(err,data){
+        res.send({
+            err:err,
+            data:data
+        })
+    })
+
 })
