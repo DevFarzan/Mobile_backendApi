@@ -103,7 +103,7 @@ router.post('/categorySkill',function(req,res){
     var perticularCategory = req.body.category;
 
     categorySkill.find({
-        category:perticularCategory
+
     },function(err,data){
         res.send({err:err,data:data});
     })
@@ -113,7 +113,7 @@ router.post('/skillQuestion',function(req,res){
     var skill = req.body.skill;
 
     categoryQuestionAnswer.find({
-        skill:skill
+       
     },function(err,data){
         res.send({
             err:err,
